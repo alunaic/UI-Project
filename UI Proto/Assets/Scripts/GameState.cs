@@ -23,7 +23,8 @@ public class GameState: MonoBehaviour
     public string QuestionPyramid;
     public string EndText;
 
-    public void WhereButtonClick()
+    public void WhereButtonClick() 
+    // on button click, disable welcome object and button and replace with first question and branching choice
     {
         WelcomeObj.SetActive(false);
         WhereButton.SetActive(false);
@@ -34,6 +35,7 @@ public class GameState: MonoBehaviour
     }
 
     public void PyramidButtonClick()
+    // on button click, change text and button and mark this option as seen
     {
         PyramidButton.SetActive(false);
         FaceButton.SetActive(false);
@@ -44,6 +46,7 @@ public class GameState: MonoBehaviour
     }
 
     public void FaceButtonClick()
+    // on button click, change text and button and mark this option as seen
     {
         PyramidButton.SetActive(false);
         FaceButton.SetActive(false);
@@ -53,6 +56,7 @@ public class GameState: MonoBehaviour
 
     }
     public void BackButtonClick()
+    // if both options have been seen return to main camera view and load end text
     {
         if (PyramidSeen == true && FaceSeen == true)
         {
@@ -68,22 +72,5 @@ public class GameState: MonoBehaviour
         BackButton.SetActive(false);
         }
     }
-    //setup true-false statements to use later, to check for button clicks and trigger camera change
-    // public bool IsQuestA;
-    // public bool IsQuestB;
-    
-    // public bool IsWelcomeB;
-    // public bool IsChoiceA;
-    // public bool IsChoiceB;
-    // public bool Reset;
-
-    //Turns off the welcome text
-    //Turns on ChoiceA and ChoiceB buttons
-    public void TurnOnChoiceButtons(){
-        PyramidButton.SetActive(true);
-        FaceButton.SetActive(true);
-        WhereButton.SetActive(false);
-        WhatButton.SetActive(false);
-        
-    }
+  
 }
