@@ -7,42 +7,51 @@ public class CameraShift : MonoBehaviour
     public Camera TopCam;
     public Camera DownCam;
 
-    void Start()
+    public void CameraChangePyramid()
     {
-        MainCam.enabled = true;
+        DownCam.enabled = true;
         TopCam.enabled = false;
-        DownCam.enabled = false;
-
+        MainCam.enabled = false;
     }
 
-    void Update()
+    public void CameraChangeFace()
     {
-        if (IsQuestA == true)
-        {   
-            DownCam.enabled = true;
-            TopCam.enabled = false;
-            MainCam.enabled = false;
-            
-        }
-        else
-        {
-            MainCam.enabled = true;
-            TopCam.enabled = false;
-            DownCam.enabled = false;
-        }
-
-        if (IsQuestB == true)
-        {
-            TopCam.enabled = true;
-            MainCam.enabled = false;
-            DownCam.enabled = false;
-        }
-        else
-        {
-            MainCam.enabled = true;
-            TopCam.enabled = false;
-            DownCam.enabled = false;
-        }
-
+        DownCam.enabled = false;
+        TopCam.enabled = true;
+        MainCam.enabled = false;
     }
+    public void CameraChangeMain()
+    {
+        DownCam.enabled = false;
+        TopCam.enabled = false;
+        MainCam.enabled = true;
+    }
+   
+        // if ( public string WelcomeText == true)
+        // {   
+        //     DownCam.enabled = true;
+        //     TopCam.enabled = false;
+        //     MainCam.enabled = false;
+            
+        // }
+        // else
+        // {
+        //     MainCam.enabled = true;
+        //     TopCam.enabled = false;
+        //     DownCam.enabled = false;
+        // }
+
+        // if ( GameObject TitleText3 == true)
+        // {
+        //     TopCam.enabled = true;
+        //     MainCam.enabled = false;
+        //     DownCam.enabled = false;
+        // }
+        // else
+        // {
+        //     MainCam.enabled = true;
+        //     TopCam.enabled = false;
+        //     DownCam.enabled = false;
+        // }
+
 }
