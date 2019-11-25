@@ -285,12 +285,13 @@ MonoBehaviour:
   WelcomeObj: {fileID: 1747734833}
   QuestObj: {fileID: 890176202}
   Questtext: {fileID: 890176204}
-  EndObj: {fileID: 1089861128}
+  EndObj: {fileID: 0}
   QuestionFace: "When seeing a face you\u2019re seeing a pattern. Your choice, if
     it matters."
   QuestionPyramid: "If I am a pyramid I might stand for mystery. It\u2019s all in
     what you see"
-  EndText: 
+  EndText: "A change of perspective, they say, is reflective. One view from the top,
+    another from the bottom. Looks like you got\u2019em - THE END"
 --- !u!114 &239487292
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -415,7 +416,7 @@ RectTransform:
   m_Children:
   - {fileID: 360168891}
   m_Father: {fileID: 1240691521}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -544,7 +545,7 @@ RectTransform:
   m_Children:
   - {fileID: 1000284782}
   m_Father: {fileID: 1240691521}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1065,84 +1066,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1000284781}
   m_CullTransparentMesh: 0
---- !u!1 &1089861128
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1089861129}
-  - component: {fileID: 1089861131}
-  - component: {fileID: 1089861130}
-  m_Layer: 5
-  m_Name: EndObj
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &1089861129
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1089861128}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.649, y: 1.649, z: 1.649}
-  m_Children: []
-  m_Father: {fileID: 1240691521}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -204.00003}
-  m_SizeDelta: {x: 618.6, y: 42.3}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1089861130
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1089861128}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 12800000, guid: 1d5dc9c62977483418874813f758d6d8, type: 3}
-    m_FontSize: 14
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
-    m_Alignment: 1
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: "One view from the top, another from the bottom. Looks like you got\u2019em.
-    \nThe End\r.\n"
---- !u!222 &1089861131
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1089861128}
-  m_CullTransparentMesh: 1
 --- !u!1 &1240691516
 GameObject:
   m_ObjectHideFlags: 0
@@ -1279,7 +1202,6 @@ RectTransform:
   m_Children:
   - {fileID: 1747734834}
   - {fileID: 890176203}
-  - {fileID: 1089861129}
   - {fileID: 608624489}
   - {fileID: 1592814985}
   - {fileID: 859515802}
@@ -1325,7 +1247,7 @@ RectTransform:
   m_Children:
   - {fileID: 1280248349}
   m_Father: {fileID: 1240691521}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1520,7 +1442,7 @@ RectTransform:
   m_Children:
   - {fileID: 1743264642}
   m_Father: {fileID: 1240691521}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1572,6 +1494,17 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 239487292}
         m_MethodName: CameraChangeFace
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 239487291}
+        m_MethodName: FaceButtonClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1723,7 +1656,7 @@ RectTransform:
   m_Children:
   - {fileID: 230042559}
   m_Father: {fileID: 1240691521}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1775,6 +1708,17 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 239487292}
         m_MethodName: CameraChangeMain
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 239487291}
+        m_MethodName: BackButtonClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

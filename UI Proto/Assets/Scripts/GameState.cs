@@ -16,9 +16,8 @@ public class GameState: MonoBehaviour
     public GameObject QuestObj;
     public Text Questtext;
     public GameObject EndObj; 
-    //public GameObject TitleText4;
-    //public GameObject TitleText5;
-    //public GameObject TitleText6;
+    bool PyramidSeen = false;
+    bool FaceSeen = false;
     
     public string QuestionFace;
     public string QuestionPyramid;
@@ -38,10 +37,36 @@ public class GameState: MonoBehaviour
     {
         PyramidButton.SetActive(false);
         FaceButton.SetActive(false);
-        //BackButton.SetActive(true);
         Questtext.text = QuestionPyramid;
-      
+        BackButton.SetActive(true);
+        PyramidSeen = true;
 
+    }
+
+    public void FaceButtonClick()
+    {
+        PyramidButton.SetActive(false);
+        FaceButton.SetActive(false);
+        Questtext.text = QuestionFace;
+        BackButton.SetActive(true);
+        FaceSeen = true; 
+
+    }
+    public void BackButtonClick()
+    {
+        if (PyramidSeen == true && FaceSeen == true)
+        {
+        PyramidButton.SetActive(false);
+        FaceButton.SetActive(false);
+        Questtext.text = EndText;
+        BackButton.SetActive(false);
+        }
+        else {
+        PyramidButton.SetActive(true);
+        FaceButton.SetActive(true);
+        Questtext.text = "This is a strange space and it’s all in one place. Chose an angle:";
+        BackButton.SetActive(false);
+        }
     }
     //setup true-false statements to use later, to check for button clicks and trigger camera change
     // public bool IsQuestA;
